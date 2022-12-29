@@ -20,3 +20,7 @@ print(link)
 # 						<img src="https://shared-comic.pstatic.net/thumb/webtoon/20853/50/inst_thumbnail_20853_50.jpg" title="마음의 소리 50화 &lt;격렬한 나의 하루&gt;" alt="마음의 소리 50화 &lt;격렬한 나의 하루&gt;" width="71" height="41" onERROR="this.src='https://ssl.pstatic.net/static/comic/images/migration/common/non71_41.gif'">
 # 						<span class="mask"></span>
 # 					</a>
+
+for item in cartoons:
+    title = item.find("a").text.strip()
+    print(title)
