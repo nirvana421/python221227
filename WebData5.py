@@ -23,6 +23,7 @@ class Form(QMainWindow):
         self.btn.move(120, 20)
         self.btn.clicked.connect(self.setTableWidgetData)
 
+        # 다중 행열을 리스트로 출력
         self.tableWidget = QTableWidget(self)
         self.tableWidget.move(20, 70)
         self.tableWidget.resize(800, 600)

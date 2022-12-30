@@ -10,7 +10,9 @@ class DemoWindow(QMainWindow):
 
     def setupUI(self):
         btn1 = QPushButton("닫기", self)
+        # x축, y축
         btn1.move(20, 20)
+        # 시그널(이벤트) + 슬롯 메서드 연결
         btn1.clicked.connect(QCoreApplication.instance().quit)
 
 if __name__ == "__main__":
